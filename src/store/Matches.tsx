@@ -62,7 +62,6 @@ export const useMatchStore = create<MatchStore>((set) => ({
                 getDocs(user2Query),
             ]);
 
-            // Helper to populate user data
             const populateUserData = async (match: Match) => {
                 const matchedUserId = match.user1_id === userId ? match.user2_id : match.user1_id;
                 const matchedUserDoc = await getDoc(doc(db, 'users', matchedUserId));
