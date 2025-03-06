@@ -26,8 +26,6 @@ const ShareASnapshot: FC<OnboardingProps> = ({ advance, goBack }) => {
     };
 
     const uploadToFirestore = async () => {
-        console.log(auth?.uid);
-        console.log("Loading...");
 
         if (!auth?.uid) {
             console.error("User ID is undefined. Cannot update Firestore without a valid UID.");
@@ -77,8 +75,9 @@ const ShareASnapshot: FC<OnboardingProps> = ({ advance, goBack }) => {
                     explore: false,
                     "swipe-and-match": false,
                     matches: false,
-                    chat: false,
+                    chat: true,
                     "user-profile": false,
+                    notification: true
                 }
             });
 
