@@ -15,7 +15,7 @@ export const GetPhotoVerified: React.FC<OnboardingProps> = ({advance, goBack}) =
 												<img src={`/assets/icons/photo-verified.svg`} alt={``}/>
 												<h1 className={`text-[30px] font-neue-montreal font-bold`}>Get photo verified</h1>
 												<p className={`text-[11px] sm:text-[14px] md:text-[16px] md:leading-[1.2] max-w-[280px] text-[#8A8A8E] leading-[110%]`}>
-														To confirm you’re who you, we’d like to do a photo verification to confirm you’re the person
+														We’d like to undergo a photo verification process to confirm you’re the person
 														in your photos.
 												</p>
 										</div>
