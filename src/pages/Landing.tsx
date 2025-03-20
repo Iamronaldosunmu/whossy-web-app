@@ -276,7 +276,7 @@ const MarqueeImageSlider = () => {
 }
 
 const Landing = () => {
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
 
         return (
             <>  
