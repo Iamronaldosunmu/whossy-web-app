@@ -40,6 +40,7 @@ import { styles, tourGuideSteps } from "@/data/tour-guide-steps.ts";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import {updateUserProfile} from "@/hooks/useUser.ts";
 import { User } from "@/types/user.ts";
+import DeleteAccount from "./pages/DeleteAccount";
 
 const queryClient = new QueryClient();
 
@@ -227,6 +228,7 @@ function App() {
             <Route path="/faq" element={<Faq />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/delete-account" element={<DeleteAccount />} />
           </Routes>
           <ToastContainer />
         </AnimatePresence>
